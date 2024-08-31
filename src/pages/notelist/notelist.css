@@ -1,0 +1,70 @@
+
+.list-page {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .add-note {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .notes-section {
+    margin-top: 40px;
+  }
+  
+  .add-note input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 25%;
+    margin-right: 10px;
+  }
+
+  .add-note textarea {
+    width: 60%;
+  }
+  
+  .add-note button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-note button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .notes-list {
+    margin-top: 20px;
+  }
+  
+  .note-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .note-item span {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  .note-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .note-item button:hover {
+    background-color: #444;
+  }
+  

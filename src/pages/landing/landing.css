@@ -1,0 +1,76 @@
+/* src/App.css */
+
+  
+  .landing-page {
+    text-align: center;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background-color: #61dafb;
+    padding: 100px 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    background-color: #282c34;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #20232a;
+  }
+  
+  .features, .about, .contact {
+    padding: 60px 20px;
+  }
+  
+  .feature-item {
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  

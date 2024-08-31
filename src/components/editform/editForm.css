@@ -1,0 +1,21 @@
+
+
+.edit-note {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-note input[type="text"],
+  .edit-note textarea,
+  .edit-note input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .edit-note button {
+    margin-right: 8px;
+  }
+  
