@@ -27,3 +27,34 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/react-notebook-app.git
    cd react-notebook-app
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set Up JSON Server(for Mock API):**
+
+  JSON Server will be used to simulate a backend API.
+
+   ```bash
+   npm install -g json-server
+  ```
+
+  Start JSON Server:
+
+  ```bash
+   json-server --watch db.json
+   ```
+
+   the will start the mock API on
+   `http://localhost:3000`.
+
+4. **Run the Development Server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   this will start the Vite development server, and you can view the application at `http://localhost:5173`by default.
