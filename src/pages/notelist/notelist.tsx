@@ -5,8 +5,6 @@ import { JournalEntry } from '../../types';
 import './notelist.css';
 import EditForm from '../../components/editform/EditForm';
 
-// const PAGE_SIZE = 10; // Number of entries per page
-
 const ListPage: React.FC = () => {
   const [notes, setNotes] = useState<JournalEntry[]>([]);
   const [newNoteTitle, setNewNoteTitle] = useState('');
@@ -38,7 +36,7 @@ const ListPage: React.FC = () => {
     const moreNotes = await fetchNotes(page + 1, filterImportant);
     const newNotes = [...notes,...moreNotes].reverse();
     setNotes(newNotes);
-    // setNotes(prevNotes => [...prevNotes, ...moreNotes]);
+    setNotes(prevNotes => [...prevNotes, ...moreNotes]);
     setPage(page + 1);
     setLoading(false);
   };
@@ -78,11 +76,6 @@ const ListPage: React.FC = () => {
     await deleteNote(id);
     setNotes(notes.filter(note => note.id !== id));
   };
-
-  // const handleEditNote = async (id: number, updatedNote: Partial<Omit<JournalEntry, 'id'>>) => {
-  //   const editedNote = await updateNote(id, updatedNote);
-  //   setNotes(notes.map(note => (note.id === id ? editedNote : note)));
-  // };
 
   const toggleExpandNote = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -212,9 +205,6 @@ const handleEditInitiate = (note: JournalEntry) => {
                 <button onClick={() => handleDeleteNote(note.id)}>Delete</button>
                 </div>
               )}
-              
-              
-              {/* Implement an edit button if editing is needed */}
             </div>
           ))}
         </div>

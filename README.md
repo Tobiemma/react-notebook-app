@@ -9,9 +9,9 @@ A React-based notebook application allowing users to create, edit, delete, and m
 - **Delete Notes**: Remove notes from the list.
 - **Mark Important**: Tag notes as important and filter them accordingly.
 - **View Full Content**: Expand notes with lengthy content to view the full text.
-- **Paginated Loading**: Load notes in a paginated manner or with infinite scrolling.
+- **Paginated Loading**: Load notes in a paginated manner or infinity scrolling.
 
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
@@ -25,7 +25,8 @@ Ensure you have the following installed:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/react-notebook-app.git
+   git clone https://github.com/Tobiemma/react-notebook-app.git
+
    cd react-notebook-app
 
 2. **Install Dependencies**
@@ -35,17 +36,16 @@ Ensure you have the following installed:
    ```
 
 3. **Set Up JSON Server(for Mock API):**
-
-  JSON Server will be used to simulate a backend API.
+   JSON Server will be used to simulate a backend API.
 
    ```bash
    npm install -g json-server
-  ```
+   ```
 
-  Start JSON Server:
+   Start JSON Server:
 
-  ```bash
-   json-server --watch db.json
+   ```bash
+    json-server --watch db.json
    ```
 
    the will start the mock API on
